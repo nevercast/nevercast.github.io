@@ -15,3 +15,15 @@ subtitle: Josh Lloyd - Software Developer - Student
 <a id="my-code" class="anchor" href="#my-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My Code</h2>
 
 <p>Check out my <a href="https://github.com/nevercast">Github</a> while you're lurking</p>
+
+<h2>
+<a id="my-blog" class="anchor" href="#my-blog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My Blog</h2>
+<p>I've started work on my blog also, here is a flat list of posts for now. This will develop over time, I'll also add tags and categories eventually too.</p>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
