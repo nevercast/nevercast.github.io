@@ -3,7 +3,7 @@
       <h2 class="project-tagline">{{ page.subtitle }}</h2>
       {% for link in site.pages %}
         {% if link.nav %}
-          <a class="btn" href="{{ link.url }}">{{ link.nav_title | default: link.title }}</a>
+          <a class="btn{% if link.url == page.url %}active{% endif %}" href="{{ link.url }}">{{ link.nav_title | default: link.title }}</a>
         {% endif %}
       {% endfor %}
     </section>
