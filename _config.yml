@@ -19,4 +19,5 @@ defaults:
     values:
       is_page: yes
       type: page
+      nav_order: 999
       layout: page
