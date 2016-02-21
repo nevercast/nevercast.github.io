@@ -1,12 +1,12 @@
 {% if site.related_posts %}
-{% if site.related_posts | size > site.max_related_posts %}
+{% if site.related_posts.length > site.max_related_posts %}
   {% assign related_post_count = site.max_related_posts %}
 {% else %}
   {% assign related_post_count = site.related_posts | size %}
 {% endif %}
 <hr></hr>
 <section id="related_posts">
-<h1>{{ related_post_count }} Related {{related_post_count | size | pluralize: 'post', 'posts'}}</h1>
+<h1>{{ related_post_count }} Related {{related_post_count | pluralize: 'post', 'posts'}}</h1>
 {% for post in site.related_posts limit: site.max_related_posts %}
 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 {% endfor %}
