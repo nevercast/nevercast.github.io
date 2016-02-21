@@ -1,15 +1,17 @@
 {% assign site_related_post_count = site.related_posts | size %}
-{% if site_related_post_count %}
-  {% if site_related_post_count > site.max_related_posts %}
-    {% assign related_post_count = site.max_related_posts %}
-  {% else %}
-    {% assign related_post_count = site_related_post_count %}
+{% if page.is_post %}
+  {% if site_related_post_count %}
+    {% if site_related_post_count > site.max_related_posts %}
+      {% assign related_post_count = site.max_related_posts %}
+    {% else %}
+      {% assign related_post_count = site_related_post_count %}
+    {% endif %}
+    <hr></hr>
+    <section id="related_posts">
+    <h2>Related posts</h2>
+      {% for post in site.related_posts limit: site.max_related_posts %}
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      {% endfor %}
+    </section>
   {% endif %}
-  <hr></hr>
-  <section id="related_posts">
-  <h2>Related posts</h2>
-    {% for post in site.related_posts limit: site.max_related_posts %}
-      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-    {% endfor %}
-  </section>
 {% endif %}
