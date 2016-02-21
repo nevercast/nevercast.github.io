@@ -1,10 +1,9 @@
-{{ site.related_posts | size }}
-{{ site.related_posts.length }}
-{% if site.related_posts.length %}
-  {% if site.related_posts.length > site.max_related_posts %}
+{% assign site_related_post_count = site.related_posts | size %}
+{% if site_related_post_count %}
+  {% if site_related_post_count > site.max_related_posts %}
     {% assign related_post_count = site.max_related_posts %}
   {% else %}
-    {% assign related_post_count = site.related_posts.length %}
+    {% assign related_post_count = site_related_post_count %}
   {% endif %}
   <hr></hr>
   <section id="related_posts">
