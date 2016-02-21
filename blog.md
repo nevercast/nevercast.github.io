@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Blog
+subtitle: Jaded rambles of a nerd
 ---
 
 # Blog page
