@@ -1,5 +1,9 @@
 ---
 layout: default
 ---
-
+<small>{{ page.date }} | 
+{% for tag in page.tags %}
+<small><a href="/blog/tag#{{ tag }}">{{ tag | slugify }}</a></small>
+{% endfor %}
+</small>
 {{ content }}
