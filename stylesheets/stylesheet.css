@@ -201,10 +201,12 @@ a {
     padding: 0;
     margin-bottom: 1rem; }
 .main-content hr {
-  height: 2px;
+  height: 1px;
   padding: 0;
-  margin: 1rem 0;
-  background-color: #eff0f1;
+  margin: 1rem auto;
+  background-color: #000;
+  opacity: 0.2;
+  width: 95%;
   border: 0; }
 
 @media screen and (min-width: 64em) {
