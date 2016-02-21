@@ -5,4 +5,10 @@ layout: default
 {% for tag in page.tags %}
 <small><a style="float:right;margin:0 8px;" href="/blog/tag#{{ tag }}">{{ tag | slugify }}</a></small>
 {% endfor %}
+
 {{ content }}
+
+<p>
+  <small><i>- Josh Lloyd</i></small>
+</p>
+
