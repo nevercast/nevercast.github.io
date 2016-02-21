@@ -7,7 +7,7 @@
   {% endif %}
   <hr></hr>
   <section id="related_posts">
-  <h1>{{ related_post_count }} Related {{ related_post_count | pluralize: 'post', 'posts' }}</h1>
+  <h1>{{ related_post_count }} Related {{ related_post_count | pluralize: "post" }}</h1>
     {% for post in site.related_posts limit: site.max_related_posts %}
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     {% endfor %}
