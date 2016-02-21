@@ -1,3 +1,3 @@
-.excerpt-container h1,h2,h3,h4,h5,h6 {
+.excerpt-container h1,.excerpt-container h2,.excerpt-container h3,.excerpt-container h4,.excerpt-container h5,.excerpt-container h6 {
   display:none;
 }
