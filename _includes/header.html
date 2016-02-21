@@ -1,7 +1,7 @@
     <section class="page-header">
       <h1 class="project-name"><a href="/" style="color:white;">{{ page.title }}</a></h1>
       <h2 class="project-tagline">{{ page.subtitle }}</h2>
-      {% sorted_pages = site.pages | sort: 'nav_order', 'first' %}
+      {% assign sorted_pages = site.pages | sort: 'nav_order', 'first' %}
       {% for link in sorted_pages %}
         {% if link.nav %}
           <a class="btn {% if link.url == page.url %}active{% endif %}" href="{{ link.url }}">{{ link.nav_title | default: link.title }}</a>
