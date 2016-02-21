@@ -1,3 +1,5 @@
+{{ site.related_posts | size }}
+{{ site.related_posts.length }}
 {% if site.related_posts.length %}
   {% if site.related_posts.length > site.max_related_posts %}
     {% assign related_post_count = site.max_related_posts %}
