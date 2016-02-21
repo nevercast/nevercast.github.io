@@ -3,7 +3,7 @@ layout: default
 ---
 <small>{{ page.date | date_to_string }}
 {% for tag in page.tags %}
-<small><a style="float:right;margin 0 8px" href="/blog/tag#{{ tag }}">{{ tag | slugify }}</a></small>
+<small><a style="float:right;margin:0 8px;" href="/blog/tag#{{ tag }}">{{ tag | slugify }}</a></small>
 {% endfor %}
 </small>
 {{ content }}
