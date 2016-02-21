@@ -1,2 +1,17 @@
 markdown: kramdown
 highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Josh Lloyd"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

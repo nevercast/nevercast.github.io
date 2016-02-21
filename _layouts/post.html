@@ -8,7 +8,9 @@ layout: default
 
 {{ content }}
 
+{% if page.author %}
 <p>
-  <small><i>- Josh Lloyd</i></small>
+  <small><i>- {{ page.author }}</i></small>
 </p>
+{% endif %}
 
