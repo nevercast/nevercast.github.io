@@ -2,6 +2,7 @@ markdown: kramdown
 highlighter: rouge
 max_related_posts: 3
 excerpt_separator: <!--more-->
+url: https://nevercast.net
 defaults:
   -
     scope:
