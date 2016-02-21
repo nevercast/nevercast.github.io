@@ -1,6 +1,7 @@
 markdown: kramdown
 highlighter: rouge
 max_related_posts: 3
+excerpt_separator: <!--more-->
 defaults:
   -
     scope:
