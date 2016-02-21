@@ -9,9 +9,11 @@
     <hr></hr>
     <section id="related_posts">
     <h2>Related posts</h2>
+      <ul class="no-bullet">
       {% for post in site.related_posts limit: site.max_related_posts %}
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
+      </ul>
     </section>
   {% endif %}
 {% endif %}
