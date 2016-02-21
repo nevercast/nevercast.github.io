@@ -5,13 +5,17 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      is_post: yes
+      type: post
+      layout: post
       author: "Josh Lloyd"
   -
     scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "page"
+      is_page: yes
+      type: page
+      layout: page
