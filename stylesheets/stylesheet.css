@@ -211,13 +211,8 @@ a {
     padding: 0;
     margin-bottom: 1rem; }
 .main-content hr {
-  height: 1px;
-  padding: 0;
-  margin: 1rem auto;
-  background-color: #000;
-  opacity: 0.2;
-  width: 95%;
-  border: 0; }
+    border: 0;
+    border-top: solid 1px #eff0f1;  }
 
 @media screen and (min-width: 64em) {
   .main-content {
