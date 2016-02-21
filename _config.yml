@@ -9,6 +9,7 @@ defaults:
       path: ""
       type: posts
     values:
+      enable_comments: yes
       is_post: yes
       type: post
       layout: post
