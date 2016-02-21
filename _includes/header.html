@@ -1,11 +1,9 @@
     <section class="page-header">
       <h1 class="project-name"><a href="/" style="color:white;">{{ page.title }}</a></h1>
       <h2 class="project-tagline">{{ page.subtitle }}</h2>
-      {% for page in site.pages %}
-      <span>{{page.title}} - {{page.url}}</span>
+      {% for link in site.pages %}
+        {% if link.nav %}
+          <a class="btn" href="{{ link.url }}">{{ link.nav_title | default: link.title }}</a>
+        {% endif %}
       {% endfor %}
-      <a class="btn {% if page.url == '/index.html' %}active{% endif %}" href="/">Home</a>
-      {% assign partial_path = page.url | truncate: 5 %}
-      {{partial_path}}
-      <a class="btn" href="/blog">Blog</a>
     </section>
