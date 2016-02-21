@@ -1,0 +1,10 @@
+---
+title: Blog
+subtitle: Jaded rambles of a nerd
+nav: true
+---
+
+<h1>Recent posts</h1>
+{% for post in site.posts limit:5 %}
+  {% include post_ref.html post=post header="h2" %}
+{% endfor %}

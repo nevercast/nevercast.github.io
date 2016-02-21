@@ -1,9 +1,10 @@
 {% assign ref = include.post %}
-<h3>
+{% assign htag = include.header | default: "h3" %}
+<{{ htag }}>
 <a href="{{ ref.url }}">{{ ref.title }}</a>
 <small>- {{ ref.date | date_to_string }}
 {% for tag in ref.tags %}
    <small><a class="tag" href="/blog/tag#{{ tag | slugify }}">{{ tag }}</a></small>
 {% endfor %}
 </small>
-</h3>
+</{{ htag }}>
