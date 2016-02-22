@@ -9,7 +9,8 @@ layout: default
 {{ content }}
 
 {% if page.author %}
+{% assign author = site.data.authors[page.author] %}
 <p>
-  <small><i>- {{ page.author }}</i></small>
+  <small><i>- {{ author.name }}</i></small>
 </p>
 {% endif %}
