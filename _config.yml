@@ -3,7 +3,9 @@ highlighter: rouge
 max_related_posts: 3
 excerpt_separator: <!--more-->
 url: https://nevercast.net
-website_name: nevercast.net
+website_info:
+  name: nevercast.net
+  description: Josh Lloyd's Blog. Programmer, Student.
 owner:
   name: Josh Lloyd
   email: j.nevercast@gmail.com
