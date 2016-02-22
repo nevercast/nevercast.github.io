@@ -6,6 +6,7 @@ tags: [uni, personal]
 
 Today I started my first year at University. I had previously studied a Software Development Diploma at Computer Power Plus in New Zealand and have been working for [Computer Power Plus](http://cpp.ac.nz) as a Tutor and IT Administrator for the past couple years, but at a point near 11 months ago I decided that Uni is the thing I wanted to do next.
 <!--more-->
+
 ## First day
 
 So here I begin. It has felt like a long day but all things have been enjoyable. The 9am start wasn't too punishing in comparison to my usual 10am starts at work on a Monday. The loss of an extra hour was more-so offset by the lack of sleep gained from the anxiety. I don't typically get butterflies or emotional over things, but I was a little nervous that something would go horribly wrong such as forgetting to tick a box somewhere and not actually be enrolled to study. Fortunately nothing like that occurred and everything went rather smoothly
