@@ -1,6 +1,6 @@
 ---
 title: Atom and RSS feeds
-subtitle: I've a need, a need for feeds
+subtitle: I feel the need, the need for feeds
 tags: [dev, jekyll, rss, atom]
 published: false
 ---
