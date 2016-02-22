@@ -6,7 +6,7 @@ layout: nil
   <title type="text">{{ site.website_info.name }}</title>
   <subtitle type="text">{{ site.website_info.description }}</subtitle>
   <link href="{{ site.url_no_ssl}}"/>
-  <link type="application/atom+xml" rel="self" href="{{site.url}}/feed/atom.xml"/>
+  <link type="application/atom+xml" rel="self" href="{{ site.url_no_ssl }}/feed/atom_nossl.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url_no_ssl }}/</id>
   <author>
