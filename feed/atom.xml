@@ -8,7 +8,7 @@ layout: nil
   <link href="{{ site.url }}"/>
   <link type="application/atom+xml" rel="self" href="{{site.url}}/feed/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ site.url }}</id>
+  <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.owner.name }}</name>
     <email>{{ site.owner.email }}</email>
@@ -34,7 +34,7 @@ layout: nil
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>{{ author.name }}</name>
-      <email>{{ author.email }}</name>
+      <email>{{ author.email }}</email>
       <uri>{{ author.url }}</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
