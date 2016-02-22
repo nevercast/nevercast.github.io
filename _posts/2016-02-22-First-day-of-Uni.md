@@ -17,9 +17,9 @@ Following on was Math and then Computer Science stuff. I've been out of High Sch
 
 ## Blog direction?
 
-After talking with some fellow friends I'm at a deciding point on where to take this blog. I have considered constantly throughout the day on implementing categories or making tags more useful. So that users can reach the content they care about and digest that as fast as possible without being confronted with posts that do not appeal to them. 
+After talking with some fellow friends I'm at a deciding point on where to take this blog. I have considered constantly throughout the day on implementing categories or making tags more useful so that users can reach the content they care about and digest that as fast as possible without being confronted with posts that do not appeal to them. 
 
-So far the census seems to be, stick with tags instead of categories (Which is great because it makes perma-linking easier when I don't have a bunch of alias URLs) and keep an even balance of all types of content. Which means just as much technical stuff and personal stuff.
+So far the census seems to be, stick with tags instead of categories (Which is great because it makes perma-linking easier when I don't have a bunch of alias URLs) and keep an even balance of all types of content. Which means just as much technical stuff as personal stuff.
 
 I think that summary is something I can achieve. So I'm going to be sticking with tags for now, and I'll make another post later in the week about implementing a logarithmic tag cloud for just that purpose. 
 
