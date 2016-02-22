@@ -1,0 +1,44 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom"> 
+  <title type="text">{{ site.website_info.name }}</title>
+  <subtitle type="text">{{ site.website_info.description }}</subtitle>
+  <link href="{{ site.url_no_ssl}}"/>
+  <link type="application/atom+xml" rel="self" href="{{site.url}}/feed/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url_no_ssl }}/</id>
+  <author>
+    <name>{{ site.owner.name }}</name>
+    <email>{{ site.owner.email }}</email>
+  </author>
+
+  {% for post in site.posts %}
+  {% assign author = site.data.authors[post.author] %}
+  <entry>
+    <id>{{ site.url_no_ssl}}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="{{ site.url_no_ssl}}{{ post.url }}"/>
+    {% for related in site.related_posts limit: 3 %}
+    <link type="text/html" rel="related" 
+      href="{{ site.url_no_ssl}}{{ related.url }}"
+      title="{{ related.title }}"/>
+    {% endfor %}
+    {% for credit in post.credits %}
+    <link type="text/html" rel="via" 
+      href="{{ credit.url }}"
+      title="{{ credit.title }} - {{ credit.author }}"/>
+    {% endfor %}
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>{{ author.name }}</name>
+      <email>{{ author.email }}</email>
+      <uri>{{ author.url }}</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
