@@ -19,7 +19,7 @@ defaults:
       is_post: yes
       type: post
       layout: post
-      author: "Josh Lloyd"
+      author: josh
   -
     scope:
       path: ""
