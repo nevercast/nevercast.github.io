@@ -23,9 +23,6 @@ The Chrome development team sees no need in providing native functionality for a
 
 ### Feeds
 
-![Valid Atom 1.0](http://feedvalidator.org/images/valid-atom.png)
-![Valid RSS 2.0](http://feedvalidator.org/images/valid-rss-rogers.png)
-
 #### Safe and Secure SSL
 
   * ##### [Atom feed with citations and references (recommended)]({{ site.url }}/feed/atom.xml)
@@ -35,3 +32,8 @@ The Chrome development team sees no need in providing native functionality for a
 
   * ##### [Atom feed with citations and references. Unencrypted]({{ site.url_no_ssl }}/feed/atom_nossl.xml)
   * ##### [RSS 2.0 legacy feed. Unencrypted]({{ site.url_no_ssl }}/feed/rss_nossl.xml)
+  
+<span class="inline-image">
+![Valid Atom 1.0](http://feedvalidator.org/images/valid-atom.png)
+![Valid RSS 2.0](http://feedvalidator.org/images/valid-rss-rogers.png)
+</span>
