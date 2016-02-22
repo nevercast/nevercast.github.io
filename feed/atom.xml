@@ -15,6 +15,7 @@ layout: nil
   </author>
 
   {% for post in site.posts %}
+  {% assign author = site.data.authors[post.author] %}
   <entry>
     <id>{{ site.url }}{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="{{ site.url}}{{ post.url }}"/>
@@ -22,8 +23,9 @@ layout: nil
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>{{ post.author }}</name>
-      <uri>{{ site.url }}</uri>
+      <name>{{ author.name }}</name>
+      <email>{{ author.email }}</name>
+      <uri>{{ author.url }}</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
