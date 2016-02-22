@@ -18,7 +18,12 @@ layout: nil
   {% assign author = site.data.authors[post.author] %}
   <entry>
     <id>{{ site.url }}{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="{{ site.url}}{{ post.url }}"/>
+    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+    {% for related in site.related_posts limit: 3 %}
+    <link type="text/html" rel="related" 
+      href="{{ site.url }}{{ related.url }}"
+      title="{{ related.title }}"/>
+    {% endfor %}
     <title>{{ post.title }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
