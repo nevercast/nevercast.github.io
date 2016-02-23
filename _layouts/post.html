@@ -14,3 +14,17 @@ layout: default
   <small><i>- {{ author.name }}</i></small>
 </p>
 {% endif %}
+
+{% if page.credits %}
+  <hr />
+  <section id="references">
+    <h2>References</h2>
+    <ul class="no-bullet">
+    {% for credit in page.credits %}
+      <li>
+        <a href="{{ credit.url }}">{{ credit.title }} <i>- {{ credit.author }}</i></a>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+{% endif %}
