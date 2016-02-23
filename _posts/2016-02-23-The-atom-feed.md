@@ -52,7 +52,11 @@ I personally like Feedly a lot and will be using it on my phone. Which means I w
 
 [Feedly](http://www.feedly.com/) again is my suggestion here (I should start collecting royalties). You can get apps for [iOS](https://itunes.apple.com/us/app/feedly-your-personal-news/id396069556), [Android](https://play.google.com/store/apps/details?id=com.devhd.feedly) and [Kindle](http://www.amazon.com/Feedly-Reader-Blogs-News-Youtube/dp/B0050DZN4K). So grab the one that works for you and just search for `nevercast.net`
 
-## Help!
+# Got some links?
+
+If you are looking for the URLs to my feeds, they are available [here!]({{ site.url }}/feed)
+
+# Help!
 
 If anyone needs help getting the feed to show up in their reader, post a comment below and I will try to assist you.
 
