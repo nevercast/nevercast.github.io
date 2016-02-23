@@ -6,7 +6,7 @@ credits:
     url: "http://nullprogram.com/blog/2013/09/23/"
 title: Atom and RSS feeds
 subtitle: I feel the need, the need for feeds
-tags: [dev, jekyll, rss, atom]
+tags: [dev, rss, atom]
 published: true
 ---
 
