@@ -1,7 +1,7 @@
 {% assign ref = include.post %}
 {% assign htag = include.header | default: "h3" %}
 <{{ htag }}>
-<a href="{{ ref.url }}">{{ ref.title }}</a>
+<a href="{{ ref.url }}" data-disqus-identifier="{{ ref.id }}" >{{ ref.title }}</a>
 <small>{{ ref.date | date_to_string }}
 {% for tag in ref.tags %}
    <small><a class="tag" href="/blog/tag#{{ tag | slugify }}">{{ tag }}</a></small>
