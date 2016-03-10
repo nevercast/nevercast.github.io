@@ -13,6 +13,8 @@ A single test might run 1 function with known arguments and compare the returned
 development of a program you would typically document rules or contracts that describe what each function/method/unit should or
 shouldn't do. It's from this that your unit tests are derived.
 
+<!--more-->
+
 Here's an example:
 ```python
 def square(x):
