@@ -16,6 +16,7 @@ shouldn't do. It's from this that your unit tests are derived.
 <!--more-->
 
 Here's an example:
+
 ```python
 def square(x):
   return x * x
@@ -84,6 +85,7 @@ We have added our square function from earlier and told Python to assert (check)
 `python -m unittest square_test`
 
 You should get a result similar to this
+
 ```
 .
 ----------------------------------------------------------------------
@@ -214,6 +216,7 @@ Looks good yes? We have a nice mix of big numbers and small numbers, negatives a
 You should get an Attribute Error. We haven't written a function called `mul` that will do multiplication for us yet. So Python can't find it. Let's fix that by writing the beginning of it. 
 
 #### main.py
+
 ```python
 def square(x):
   """Squares x and returns the result."""
@@ -228,6 +231,7 @@ e
 Our `mul` function is not returning anything, because we have not added anything for it to return. Let's do that.
 
 #### main.py
+
 ```python
 def square(x):
   """Squares x and returns the result."""
@@ -253,6 +257,7 @@ We have seen an AssertionError before, so we know that the test expected to get 
 We have a way around this! There are many ways to assert something with `unittest`. We have only used one, the `assertEqual`. There is another way that is perfect for our situation. That is `assertAlmostEqual`. `assertAlmostEqual` will check that the numbers are equal when rounded to 7 decimal places. Let's replace the last test with an almost equal test.
 
 #### tests.py
+
 ```python
 import unittest
 import main
